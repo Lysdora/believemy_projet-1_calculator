@@ -30,7 +30,7 @@ function divide(num1, num2) {
 }
 
 // message welcome
-alert("Hooray! Welcome to the magical world of numbers and operations!");
+alert("Hooray ! Welcome to the magical world of numbers and operations!");
 
 // Bloc do while
 do {
@@ -52,24 +52,24 @@ do {
 switch (questionCalc) {
   case 1:
     result = add(firstNumber, secondNumber);
-    alert(`The result of the addition is ${result}`);
+
     break;
   case 2:
     result = multiply(firstNumber, secondNumber);
-    alert(`The result of the Multiplication is ${result}`);
+
     break;
   case 3:
     result = substraction(firstNumber, secondNumber);
-    alert(`The result of the substraction is ${result}`);
+
     break;
   case 4:
     result = divide(firstNumber, secondNumber);
-    alert(`The result of the division is  ${result}`);
+
     break;
   default:
-    alert("An error has occurred in your code");
     break;
 }
 
+alert(`The result is : ${result}`);
 // end
 alert("Bye bye See you again!");
