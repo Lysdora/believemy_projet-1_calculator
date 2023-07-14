@@ -1,25 +1,10 @@
-alert("Hooray! Welcome to the magical world of numbers and operations!");
-
+// Global variable
 let questionCalc;
-
-do {
-  questionCalc = +prompt(
-    `What would you like to do?
-     1 - Addition
-     2 - Multiplication
-     3 - Subtraction
-     4 - Division`
-  );
-} while (isNaN(questionCalc) || ![1, 2, 3, 4].includes(questionCalc));
-
 let firstNumber;
 let secondNumber;
+let result;
 
-do {
-  firstNumber = +prompt("Choose a first number");
-  secondNumber = +prompt("Choose a second number");
-} while (isNaN(firstNumber) || isNaN(secondNumber));
-
+// Bloc function
 function add(firstNumber, secondNumber) {
   let result = firstNumber + secondNumber;
   return result;
@@ -44,6 +29,26 @@ function divide(num1, num2) {
   }
 }
 
+// message welcome
+alert("Hooray! Welcome to the magical world of numbers and operations!");
+
+// Bloc do while
+do {
+  questionCalc = +prompt(
+    `What would you like to do?
+     1 - Addition
+     2 - Multiplication
+     3 - Subtraction
+     4 - Division`
+  );
+} while (![1, 2, 3, 4].includes(questionCalc));
+
+do {
+  firstNumber = +prompt("Choose a first number");
+  secondNumber = +prompt("Choose a second number");
+} while (isNaN(firstNumber) || isNaN(secondNumber));
+
+// switch
 switch (questionCalc) {
   case 1:
     result = add(firstNumber, secondNumber);
@@ -66,4 +71,5 @@ switch (questionCalc) {
     break;
 }
 
+// end
 alert("Bye bye See you again!");
